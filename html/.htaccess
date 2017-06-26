@@ -1,0 +1,17 @@
+SetEnvIf REDIRECT_HTTPS (.+) HTTPS=$1
+
+order deny,allow
+allow from all
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /test/html
+
+    # Authorization ヘッダが取得できない環境への対応
+    RewriteCond %{HTTP:Authorization} ^(.*)
+    RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !^(.*)\.(gif|png|jpe?g|css|ico|js|svg)$ [NC]
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

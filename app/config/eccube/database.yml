@@ -1,0 +1,9 @@
+database:
+    driver: 'pdo_mysql'
+    host: 'mysql611.db.sakura.ne.jp'
+    dbname: 'actalive_test'
+    port: ''
+    user: 'actalive'
+    password : 'Actalive1121'
+    charset: utf8
+    defaultTableOptions: { collate: utf8_general_ci }

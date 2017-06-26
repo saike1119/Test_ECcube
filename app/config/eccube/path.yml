@@ -1,0 +1,55 @@
+# duplicated
+root: /test/html/ # root_urlpath
+admin_dir: testtest/ # admin_route
+tpl: /test/html/user_data/packages/default/ # front_urlpath
+admin_tpl: /test/html/user_data/packages/admin/ # admin_urlpath
+image_path: /test/html/upload/save_image/ # image_save_urlpath
+
+# base valiables
+root_dir: /home/actalive/www/test
+root_urlpath: /test/html
+template_code: default
+
+# routing
+admin_route: testtest
+user_data_route: user_data
+
+# public directory
+public_path: /html
+public_path_realdir: /home/actalive/www/test/html
+
+# realdir::image
+image_save_realdir: /home/actalive/www/test/html/upload/save_image
+image_temp_realdir: /home/actalive/www/test/html/upload/temp_image
+
+# realdir::user_data
+user_data_realdir: /home/actalive/www/test/html/user_data
+
+# realdir::block
+block_default_realdir: /home/actalive/www/test/src/Eccube/Resource/template/default/Block
+block_realdir: /home/actalive/www/test/app/template/default/Block
+
+# realdir::template
+template_default_realdir: /home/actalive/www/test/src/Eccube/Resource/template/default
+template_default_html_realdir: /home/actalive/www/test/html/template/default
+template_admin_realdir: /home/actalive/www/test/src/Eccube/Resource/template/admin
+template_admin_html_realdir: /home/actalive/www/test/html/template/admin
+template_realdir: /home/actalive/www/test/app/template/default
+template_html_realdir: /home/actalive/www/test/html/template/default
+template_temp_realdir: /home/actalive/www/test/app/cache/eccube/template
+
+# realdir::csv
+csv_temp_realdir: /home/actalive/www/test/app/cache/eccube/csv
+
+# realdir:plugin
+plugin_realdir: /home/actalive/www/test/app/Plugin
+plugin_temp_realdir: /home/actalive/www/test/app/cache/plugin
+plugin_html_realdir: /home/actalive/www/test/html/plugin
+
+# urlpath
+admin_urlpath: /test/html/template/admin
+front_urlpath: /test/html/template/default
+image_save_urlpath: /test/html/upload/save_image
+image_temp_urlpath: /test/html/upload/temp_image
+user_data_urlpath: /test/html/user_data
+plugin_urlpath: /test/html/plugin
